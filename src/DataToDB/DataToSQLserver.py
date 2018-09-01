@@ -1,6 +1,10 @@
 import os
 import os.path
+<<<<<<< HEAD
 #清洗的数据上传至SQLserver DB by 学波
+=======
+#上传至SQLserver DB by 学波
+>>>>>>> master
 class InputDB:
     def __init__(self):
         self.__dataCount = 0 #记录数
@@ -19,6 +23,11 @@ class InputDB:
                 self.__dataCount+=1
                 self.__list = self.ReadData(data)
                 self.SaveToDatabase()
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
     def ReadData(self,data):
         strTemp = ''
         strList = []
@@ -59,11 +68,16 @@ class InputDB:
                   self.__list[5],self.__list[6],self.__list[7],self.__list[8],self.__list[9],self.__list[10])])
         except : print ('%d'" :号录入异常！" %self.__dataCount)
         finally: conn.commit();conn.close()
+<<<<<<< HEAD
 
 
 workDir = "E:\数据文件"
 os.chdir(workDir) # 路径
 
+=======
+workDir = "E:\数据文件"
+os.chdir(workDir) # 路径
+>>>>>>> master
 #多文件录入
 def SaveMostFile():
     inputDB = InputDB()

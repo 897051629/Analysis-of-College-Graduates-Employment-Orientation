@@ -9,7 +9,11 @@ def CsvToDB():
             port=3306,
             user='root',
             passwd='5880940',
+<<<<<<< HEAD
             db='prediction',
+=======
+            db='ResearchProject',
+>>>>>>> master
             charset='utf8')
     cursor = db.cursor()
     reader = csv.reader(open(csvPath, 'r', encoding="utf-8"))

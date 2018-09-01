@@ -2,7 +2,10 @@ import pymysql
 import traceback
 import os.path
 #职位要求分析结果上传至MySQL  学波
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 class DataMySQL:
     def __init__(self):
         self.__dataCount = 0  # 记录数
@@ -73,7 +76,10 @@ DEFAULT CHARACTER SET = utf8;
             print(self.__fileName + " ***************创建表失败***************")
             traceback.print_exc()
         finally: db.close()
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 #多文件录入（二级目录）
 def SaveMostFile():
     workDir = "F:\TomySQL\职位要求分析结果"
